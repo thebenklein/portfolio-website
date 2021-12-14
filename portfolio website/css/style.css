@@ -1,9 +1,17 @@
 /*
 Colors used:
+Button color (Red): #ff000f
+Secondary Color (Pink): #f4d9d9
 */
 
+img {
+  width:100%;
+}
+
+
+
 body{
-  background-color:
+
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
 font-weight:300;
@@ -17,12 +25,10 @@ h1{
 
 h2{
   font-weight:700;
-  font-size:2em;
+  font-size:1.8em;
 }
 
-img {
-  width: 100%;
-}
+
 
 a {
 
@@ -31,4 +37,32 @@ a {
 a:hover {
 
   text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color:#ff000f;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #ff000f;
+  transition: 0.2s;
+}
+
+.button:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color:  #ff000f;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color:  #ff000f;
 }
