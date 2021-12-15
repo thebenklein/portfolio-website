@@ -4,11 +4,25 @@ Button color (Red): #ff000f
 Secondary Color (Pink): #f4d9d9
 */
 
+
+
+
+
 img {
   width:100%;
 }
 
+header {
+  background-color: #f4d9d9;
+  text-align: center;
+  padding: 10px;
+  margin: 15px
+  border-bottom: 3px solid ##ff000f;
+}
 
+* {
+  box-sizing: border-box;
+}
 
 body{
 
@@ -65,4 +79,89 @@ a:hover {
 .button.contact:hover {
   background-color: #ff7f50;
   color:  #ff000f;
+}
+
+/*Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff000f;
+}
+
+
+nav > ul > li > a:visited {     /* Add this based on previous exercise*/
+
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff000f;
+}
+
+nav > ul > li > a:hover {     /* Add this based on previous exercise*/
+
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff000f;
+}
+
+nav > ul > li > a:active {     /* Add this based on previous exercise*/
+
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff000f;
+}
+
+#hero {
+  background-color: #f4d9d9;
+}
+
+#hero {
+  background-color: #f4d9d9;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#header {
+  position:fixed;
+  box-shadow:0px 9px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+
+#main {
+  padding-top: 169px;
+}
+
+#contact {
+  text-align: center;
 }
