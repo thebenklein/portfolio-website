@@ -128,6 +128,7 @@ nav > ul > li > a:visited {     /* Add this based on previous exercise*/
 nav > ul > li > a:hover {     /* Add this based on previous exercise*/
 
   padding: 0 15px;
+  opacity: 0.6;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff000f;
