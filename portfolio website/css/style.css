@@ -3,65 +3,56 @@ Colors used:
 Button color (Red): #ff000f
 Secondary Color (Pink): #f4d9d9
 */
-
-
-
-
-
 img {
-  width:100%;
+  width: 100%;
 }
 
 header {
   background-color: #f4d9d9;
   text-align: center;
   padding: 10px;
-  margin: 15px
-  border-bottom: 3px solid ##ff000f;
+  margin: 15px border-bottom: 3px solid ##ff000f;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body{
-
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
-font-weight:300;
-line-height:1.6;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
-h1{
-  font-weight:700;
-  font-size:2.5em;
+h1 {
+  font-weight: 700;
+  font-size: 2.5em;
 }
 
-h2{
-  font-weight:700;
-  font-size:1.8em;
+h2 {
+  font-weight: 700;
+  font-size: 1.8em;
 }
-
-
 
 a {
-
   text-decoration: none;
 }
-a:hover {
 
+a:hover {
   text-decoration: underline;
 }
 
 .button {
   display: inline-block;
-  background-color:#ff000f;
+  background-color: #ff000f;
   color: #ffffff;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #ff000f;
-  transition: 0.2s;
+  transition: 0.2 opacity;
 }
 
 .button:hover {
@@ -71,18 +62,17 @@ a:hover {
 
 .button.contact {
   background-color: transparent;
-  color:  #ff000f;
+  color: #ff000f;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
 
 .button.contact:hover {
   background-color: #ff7f50;
-  color:  #ff000f;
+  color: #ff000f;
 }
 
 /*Layout styling */
-
 .container {
   padding: 0 15px;
 }
@@ -92,41 +82,40 @@ a:hover {
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 .logo {
   max-width: 250px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
-
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff000f;
 }
 
-
-nav > ul > li > a:visited {     /* Add this based on previous exercise*/
-
+nav>ul>li>a:visited {
+  /* Add this based on previous exercise*/
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff000f;
 }
 
-nav > ul > li > a:hover {     /* Add this based on previous exercise*/
-
+nav>ul>li>a:hover {
+  /* Add this based on previous exercise*/
   padding: 0 15px;
   opacity: 0.6;
   text-transform: uppercase;
@@ -134,16 +123,12 @@ nav > ul > li > a:hover {     /* Add this based on previous exercise*/
   color: #ff000f;
 }
 
-nav > ul > li > a:active {     /* Add this based on previous exercise*/
-
+nav>ul>li>a:active {
+  /* Add this based on previous exercise*/
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff000f;
-}
-
-#hero {
-  background-color: #f4d9d9;
 }
 
 #hero {
@@ -155,10 +140,11 @@ nav > ul > li > a:active {     /* Add this based on previous exercise*/
 }
 
 #header {
-  position:fixed;
-  box-shadow:0px 9px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  box-shadow: 0px 9px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%;
 }
+
 
 #main {
   padding-top: 169px;
@@ -167,3 +153,100 @@ nav > ul > li > a:active {     /* Add this based on previous exercise*/
 #contact {
   text-align: center;
 }
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+/* Animation Beginning*/
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {                   /*<-----to move the cloud */
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {             /*<-----to move the cloud in back*/
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+@media only screen and (min-width: 640px) {
+
+  #about-page h3 { margin-top: 0;}
+
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #main {
+    padding-top: 99px;
+
+    #hero span {
+      display: block;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    .col-lg-7 {
+      width: 58.33%;
+
+    }
+    .col-lg-5 {
+      width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  }
+
+  @media only screen and (min-width: 1440px) {
+
+  }
