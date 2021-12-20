@@ -1,17 +1,24 @@
 /*
 Colors used:
 Button color (Red): #ff000f
-Secondary Color (Pink): #f4d9d9
+White: #FFFFFF
+Black: #000000
+Secondary Color (light turquoise): #e6fbfa
+tertiary color(dark turquoise): #84ccc9
 */
 img {
   width: 100%;
 }
 
+.img-illustration{
+  max-width: 600px;
+  height: auto;
+}
+
 header {
-  background-color: #f4d9d9;
-  text-align: center;
-  padding: 10px;
+  background-color: #FFFFFF;
   margin: 15px border-bottom: 3px solid ##ff000f;
+  padding: 10px 0 4px;
 }
 
 * {
@@ -22,7 +29,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h1 {
@@ -87,168 +94,242 @@ a:hover {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
-nav>ul {
+  nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  nav>ul>li>a:visited {
+    /* Add this based on previous exercise*/
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  nav>ul>li>a:hover {
+    /* Add this based on previous exercise*/
+    padding: 0 15px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #84ccc9;
+  }
+
+  nav>ul>li>a:active {
+    /* Add this based on previous exercise*/
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ff000f;
-}
-
-nav>ul>li>a:visited {
-  /* Add this based on previous exercise*/
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ff000f;
-}
-
-nav>ul>li>a:hover {
-  /* Add this based on previous exercise*/
-  padding: 0 15px;
-  opacity: 0.6;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ff000f;
-}
-
-nav>ul>li>a:active {
-  /* Add this based on previous exercise*/
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ff000f;
-}
-
-#hero {
-  background-color: #f4d9d9;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-
-#header {
-  position: fixed;
-  box-shadow: 0px 9px 5px 0px rgba(50, 50, 50, 0.75);
-  width: 100%;
-}
-
-
-#main {
-  padding-top: 169px;
-}
-
-#contact {
-  text-align: center;
-}
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-/* Animation Beginning*/
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {                   /*<-----to move the cloud */
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {             /*<-----to move the cloud in back*/
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-
-
-
-@media only screen and (min-width: 640px) {
-
-  #about-page h3 { margin-top: 0;}
-
-
-  .col-md-6 {
-    width: 50%;
+  #hero {
+    background-color: #e6fbfa;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
 
-  [class*="col-"] {
-    float: left;
-    padding: 0 10px
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  #header {
+    position: fixed;
+    box-shadow: 0px 9px 5px 0px rgba(50, 50, 50, 0.75);
+    width: 100%;
   }
 
   #main {
-    padding-top: 99px;
+    padding-top: 71.59px;
+  }
 
-    #hero span {
-      display: block;
+  #contact {
+    text-align: center;
+    position:static;
+  }
+
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
     }
 
-
-  }
-
-  @media only screen and (min-width: 1024px) {
-
-    .col-lg-7 {
-      width: 58.33%;
-
+    50% {
+      fill: #fcffad;
     }
-    .col-lg-5 {
-      width: 41.66%;
-  }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+    100% {
+      fill: #f76414;
+    }
   }
 
-  @media only screen and (min-width: 1440px) {
-
+  /* Animation Beginning*/
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
+
+  @keyframes cloud-move {
+
+    /*<-----to move the cloud */
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+
+    /*<-----to move the cloud in back*/
+    from {
+      transform: translate(446px, 48px);
+    }
+
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+
+  .navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+  /*Medium devices (640px and larger)
+================================================================================================== */
+  @media only screen and (min-width: 641px) {
+    #about-page h3 {
+      margin-top: 0;
+    }
+
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    nav>ul>li {
+      display: inline-block;
+    }
+
+    nav > ul {
+  margin: 1em 0;
+}
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+      display: none;
+    }
+
+    .logo {
+      max-width: 250px;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 0 10px
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #main {
+      padding-top: 99px;
+
+      #hero span {
+        display: block;
+      }
+    }
+
+    /*Medium devices (1024px and larger)
+================================================================================================== */
+    @media only screen and (min-width: 1024px) {
+      .col-lg-7 {
+        width: 58.33%;
+      }
+
+      .col-lg-5 {
+        width: 41.66%;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /*Medium devices (1440px and larger)
+  ================================================================================================== */
+    @media only screen and (min-width: 1440px) {}
