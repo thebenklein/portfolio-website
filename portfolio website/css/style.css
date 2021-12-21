@@ -15,6 +15,8 @@ img {
   height: auto;
 }
 
+
+
 header {
   background-color: #FFFFFF;
   margin: 15px border-bottom: 3px solid ##ff000f;
@@ -283,6 +285,15 @@ a:hover {
 
     .navtoggle li:last-child {
       display: none;
+    }
+
+    .navtoggle.responsive li {
+      border-top: none;
+      padding: 0;
+    }
+
+    .navtoggle.responsive nav {
+      padding: 0;
     }
 
     .logo {
