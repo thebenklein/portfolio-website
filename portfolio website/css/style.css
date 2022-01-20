@@ -60,7 +60,7 @@ a:hover {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #ff000f;
-  transition: 0.2 opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
