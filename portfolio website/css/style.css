@@ -17,8 +17,8 @@ img {
 
 header {
   background-color: #ffffff;
-  margin: 0 15px 15px 15px;
-  border-bottom: 3px solid #ff000f;
+  margin: 0 15px 15px 0px;
+  border-bottom: 3px solid #fff;
   padding: 10px 0 4px;
 }
 
