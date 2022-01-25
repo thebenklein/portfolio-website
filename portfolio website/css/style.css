@@ -16,8 +16,8 @@ img {
 }
 
 header {
-  background-color: #ffffff;
-  margin: 0 15px 15px 0px;
+  background-color: #fff;
+  margin: 0 15px 15px 0;
   border-bottom: 3px solid #fff;
   padding: 10px 0 4px;
 }
@@ -54,7 +54,7 @@ a:hover {
 .button {
   display: inline-block;
   background-color: #ff000f;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -80,7 +80,7 @@ a:hover {
   color: #ff000f;
 }
 
-/*Layout styling */
+/* Layout styling */
 .container {
   padding: 0 15px;
 }
@@ -91,7 +91,6 @@ a:hover {
 
 #hero h1 {
   text-align: center;
-  /* Centers text */
 }
 
 .logo {
@@ -102,19 +101,19 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 nav > ul > li > a:visited {
-  /* Add this based on previous exercise*/
+  /* Add this based on previous exercise */
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 nav > ul > li > a:hover {
-  /* Add this based on previous exercise*/
+  /* Add this based on previous exercise */
   padding: 0 15px;
   opacity: 0.6;
   text-transform: uppercase;
@@ -123,11 +122,11 @@ nav > ul > li > a:hover {
 }
 
 nav > ul > li > a:active {
-  /* Add this based on previous exercise*/
+  /* Add this based on previous exercise */
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 nav > ul {
@@ -146,7 +145,7 @@ nav > ul {
 
 #header {
   position: fixed;
-  box-shadow: 0px 9px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 9px 5px 0 rgba(50, 50, 50, 0.75);
   width: 100%;
 }
 
@@ -173,7 +172,7 @@ nav > ul {
   }
 }
 
-/* Animation Beginning*/
+/* Animation Beginning */
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -183,7 +182,6 @@ nav > ul {
 }
 
 @keyframes cloud-move {
-  /*<-----to move the cloud */
   from {
     transform: translate(0, 50px);
   }
@@ -202,7 +200,7 @@ nav > ul {
 }
 
 @keyframes cloud-move-reverse {
-  /*<-----to move the cloud in back*/
+  /* <-----to move the cloud in back */
   from {
     transform: translate(446px, 48px);
   }
@@ -240,6 +238,7 @@ nav > ul {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -255,9 +254,10 @@ nav > ul {
   width: 60px;
   height: 60px;
 }
+
 /* Footer style ends */
 
-/*Medium devices (640px and larger)
+/* Medium devices (640px and larger)
 ================================================================================================== */
 @media only screen and (min-width: 641px) {
   #about-page h3 {
@@ -323,7 +323,7 @@ nav > ul {
   display: block;
 }
 
-/*Medium devices (1024px and larger)
+/* Medium devices (1024px and larger)
 ================================================================================================== */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
@@ -341,7 +341,5 @@ nav > ul {
   }
 }
 
-/*Medium devices (1440px and larger)
+/* Medium devices (1440px and larger)
   ================================================================================================== */
-@media only screen and (min-width: 1440px) {
-}
