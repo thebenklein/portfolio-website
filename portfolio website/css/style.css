@@ -250,6 +250,10 @@ nav > ul {
   padding: 0 0 10px;
 }
 
+.project-thumbnail h3 {
+  margin-top: 0;
+}
+
 /* Footer style starts here */
 .social-icon {
   width: 60px;
