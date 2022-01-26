@@ -16,7 +16,7 @@ img {
 }
 
 .img-illustration {
-  max-width: 600px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -47,6 +47,12 @@ h1 {
   font-size: 2.5em;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #349aae;
+}
+
 h2 {
   font-weight: 700;
   font-size: 1.8em;
@@ -62,13 +68,13 @@ a:hover {
 
 .button {
   display: inline-block;
-  background-color: #ff000f;
+  background-color: #00c6ce;
   color: #fff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #ff000f;
+  border-bottom: 2px solid #00c6ce;
   transition: 0.2s opacity;
 }
 
@@ -78,15 +84,15 @@ a:hover {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #ff000f;
+  background-color: #00c6ce;
+  color: #fff;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #00c6ce;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
-  color: #ff000f;
+  opacity: 0.6;
+  text-decoration: none;
 }
 
 /* Layout styling */
@@ -288,11 +294,12 @@ nav > ul {
 
 .navtoggle {
   text-align: unset;
-  padding: 20px 0 13px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* removed 'padding: 20px 0 13px;' from .navtoggle above */
 
 nav {
   width: auto;
