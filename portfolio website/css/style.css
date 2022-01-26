@@ -258,6 +258,14 @@ nav > ul {
   padding: 0 0 10px;
 }
 
+.project-thumbnail h3 {
+  margin-top: 0;
+}
+
+#profile-pic img {
+  max-width: 200px;
+}
+
 /* Footer style starts here */
 .social-icon {
   width: 60px;
@@ -278,9 +286,12 @@ nav > ul {
   }
 }
 
-header {
+.navtoggle {
   text-align: unset;
   padding: 20px 0 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
@@ -335,6 +346,10 @@ nav > ul {
 /* Medium devices (1024px and larger)
 ================================================================================================== */
 @media only screen and (min-width: 1024px) {
+  .navtoggle {
+    display: block;
+  }
+
   .col-lg-7 {
     width: 58.33%;
   }
