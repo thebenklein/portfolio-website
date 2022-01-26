@@ -152,14 +152,14 @@ nav > ul {
   text-align: center;
 }
 
+#main {
+  padding-top: 184px;
+}
+
 #header {
   position: fixed;
   box-shadow: 0 9px 5px 0 rgba(50, 50, 50, 0.75);
   width: 100%;
-}
-
-#main {
-  padding-top: 71.59px;
 }
 
 #contact {
