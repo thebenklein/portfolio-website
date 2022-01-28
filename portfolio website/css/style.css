@@ -40,11 +40,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 2.5em;
+  color: #20313f;
 }
 
 h4 {
@@ -53,10 +49,52 @@ h4 {
   color: #349aae;
 }
 
+/* Homepage Titles Beginning */
+
+h7 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #20313f;
+}
+
+/* 'Get in Touch'*/
+
+h8 {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #20313f;
+}
+/* Nonna Titles Beginning */
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #f95862;
+}
+
 h2 {
   font-weight: 700;
   font-size: 1.8em;
+  color: #f95862;
 }
+
+/* Nonna Titles End */
+
+/* Flash Titles Beginning */
+h5 {
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #ffb432;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #ffb432;
+}
+
+
+/* Flash Titles End */
 
 .insights {
   border-radius: 25px;
@@ -80,6 +118,20 @@ a:hover {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #00c6ce;
+  transition: 0.2s opacity;
+}
+
+/* Nonna Prototype button */
+
+.button-nonna {
+  display: inline-block;
+  background-color: #f95862;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #f95862;
   transition: 0.2s opacity;
 }
 
