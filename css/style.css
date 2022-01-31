@@ -93,7 +93,6 @@ h6 {
   color: #ffb432;
 }
 
-
 /* Flash Titles End */
 
 .insights {
@@ -286,6 +285,32 @@ nav > ul {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+.navtoggle {
+  max-height: 75px;
+}
+
+.navtoggle.responsive {
+  max-height: 350px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -301,10 +326,6 @@ nav > ul {
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
-}
-
-.navtoggle.responsive li {
-  display: block;
 }
 
 .navtoggle.responsive nav {
@@ -372,14 +393,6 @@ nav > ul {
   margin: 1em 0;
 }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navtoggle li:last-child {
-  display: none;
-}
-
 .logo {
   max-width: 250px;
 }
@@ -412,6 +425,13 @@ nav > ul {
 @media only screen and (min-width: 1024px) {
   .navtoggle {
     display: block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-lg-7 {
