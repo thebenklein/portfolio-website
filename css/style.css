@@ -10,6 +10,10 @@ img {
   width: 100%;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .profile-pic {
   width: 300px;
   margin: 0px 25px 0px 25px;
@@ -91,6 +95,7 @@ h6 {
   font-weight: 700;
   font-size: 2.5em;
   color: #ffb432;
+  margin: 0;
 }
 
 /* Flash Titles End */
@@ -216,6 +221,10 @@ nav > ul {
 
 #main {
   padding-top: 184px;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 #header {
