@@ -10,6 +10,9 @@ img {
   width: 100%;
 }
 
+.logo{
+  width: 150px;
+}
 strong {
   font-weight: bold;
 }
@@ -172,9 +175,7 @@ a:hover {
   text-align: center;
 }
 
-.logo {
-  max-width: 150px;
-}
+
 
 nav > ul > li > a {
   padding: 0 15px;
