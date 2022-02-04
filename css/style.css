@@ -106,6 +106,23 @@ h6 {
 
 /* Flash Titles End */
 
+/* Portfolio-website Titles Beginning */
+h9 {
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #58cdf2;
+  margin: 5px 0 5px 0;
+}
+
+h10 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #58cdf2;
+  margin: 0;
+}
+
+/* Portfolio-website Titles End */
+
 .insights {
   border-radius: 25px;
   background: #fff9c1;
